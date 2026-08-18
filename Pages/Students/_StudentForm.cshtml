@@ -1,0 +1,14 @@
+@model SimpleSIS.Models.Student
+
+@* TODO-PT-VALIDATE-02
+   Add a model-only validation summary and a field-level validation message
+   beside every required form control. *@
+
+<div class="mb-3">
+    <label asp-for="StudentNumber" class="form-label"></label>
+    <input asp-for="StudentNumber" class="form-control" />
+</div>
+
+@* TODO-PT-VALIDATE-01
+   Following the StudentNumber example, create Bootstrap-styled label and
+   input groups for FullName, GradeLevel, Section, and Strand. *@
