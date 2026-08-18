@@ -87,7 +87,9 @@ Complete the searchable TODOs in this order:
 5. `TODO-PT-VALIDATE-*`
 6. Full testing
 
-See [PT_CHECKLIST.md](PT_CHECKLIST.md) for checkpoints, tests, and scoring categories.
+Start with [GUIDED_LAB.md](GUIDED_LAB.md) for the step-by-step laboratory sequence, conceptual hints, checkpoints, challenges, and troubleshooting.
+
+See [PT_CHECKLIST.md](PT_CHECKLIST.md) for the concise checkpoints, tests, and scoring categories.
 
 ## Basic troubleshooting
 
