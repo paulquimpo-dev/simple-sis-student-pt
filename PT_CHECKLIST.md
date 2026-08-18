@@ -10,34 +10,34 @@
 - [ ] The provided migration applies.
 - [ ] The starter web application launches.
 
-### READ
+### Guided PT Lab 1 — READ (September 7)
 
 - [ ] `TODO-PT-READ-01` retrieves Students through `AppDbContext`.
 - [ ] `TODO-PT-READ-02` displays Student Number, Full Name, Grade Level, Section, and Strand.
 - [ ] Both seed Students display.
 
-### CREATE
+### Guided PT Lab 2 — CREATE (September 8)
 
 - [ ] `TODO-PT-CREATE-01` prevents an invalid form from saving.
 - [ ] `TODO-PT-CREATE-02` adds and saves a valid Student.
 - [ ] The application returns to the list after saving.
 - [ ] The created Student remains after restart.
 
-### UPDATE
+### Guided PT Lab 3 — UPDATE (September 9)
 
 - [ ] `TODO-PT-UPDATE-01` loads the selected Student.
 - [ ] `TODO-PT-UPDATE-02` prevents invalid changes from saving.
 - [ ] `TODO-PT-UPDATE-03` updates the stored fields and saves.
 - [ ] The updated values remain after restart.
 
-### DELETE
+### Guided PT Lab 4 — DELETE (September 9)
 
 - [ ] `TODO-PT-DELETE-01` loads the selected Student for confirmation.
 - [ ] Opening confirmation does not delete anything.
 - [ ] `TODO-PT-DELETE-02` removes and saves only after confirmation POST.
 - [ ] The Student remains absent after restart.
 
-### Validation
+### Guided PT Lab 5 — Validation (September 9)
 
 - [ ] `TODO-PT-VALIDATE-01` provides the required form controls.
 - [ ] `TODO-PT-VALIDATE-02` displays field-level validation messages.
@@ -48,7 +48,11 @@
 - [ ] Empty Strand is rejected.
 - [ ] Invalid input is not saved.
 
-## Full observable test matrix
+## Final PT Completion Lab (September 10)
+
+The five guided labs build the application incrementally. Complete the following integrated matrix before the PT is considered functionally complete.
+
+### Full observable test matrix
 
 - [ ] Application starts.
 - [ ] READ displays seed records.
@@ -60,6 +64,16 @@
 - [ ] Restart: deleted Student remains absent.
 - [ ] Required-field validation works.
 - [ ] Invalid Grade Level is rejected.
+
+### Completion and readiness
+
+- [ ] All assigned `TODO-PT-*` areas are complete.
+- [ ] The project builds successfully.
+- [ ] No real credentials are tracked.
+- [ ] Teacher completes the first formal PT check.
+- [ ] Repair items are recorded for September 14 when needed.
+- [ ] Student is prepared for the September 15–16 individual demonstration.
+- [ ] Final source is ready for the September 17 submission.
 
 ## Scoring categories
 

@@ -78,16 +78,20 @@ The records are fictional and created by the provided migration.
 
 ## Required work order
 
-Complete the searchable TODOs in this order:
+The guided laboratories cumulatively build your final Performance Task. Complete them only after the related lesson has been taught and in this scheduled order:
 
-1. `TODO-PT-READ-*`
-2. `TODO-PT-CREATE-*`
-3. `TODO-PT-UPDATE-*`
-4. `TODO-PT-DELETE-*`
-5. `TODO-PT-VALIDATE-*`
-6. Full testing
+| Date | Guided PT laboratory | TODO group | Required result |
+| --- | --- | --- | --- |
+| September 7 | Guided PT Lab 1 — READ | `TODO-PT-READ-*` | Seed Students load and display |
+| September 8 | Guided PT Lab 2 — CREATE | `TODO-PT-CREATE-*` | Valid Student persists after restart |
+| September 9 | Guided PT Lab 3 — UPDATE | `TODO-PT-UPDATE-*` | Changes persist after restart |
+| September 9 | Guided PT Lab 4 — DELETE | `TODO-PT-DELETE-*` | Confirmed deletion persists |
+| September 9 | Guided PT Lab 5 — Validation | `TODO-PT-VALIDATE-*` | Invalid input is rejected and not saved |
+| September 10 | Final PT Completion Lab | All groups | Complete matrix and integration pass |
 
-After completing all setup steps above and confirming that the starter application runs, continue with [GUIDED_LAB.md](GUIDED_LAB.md) to complete READ, CREATE, UPDATE, DELETE, validation, and final testing.
+Completing the individual labs progressively creates your PT. The final PT still requires the Final PT Completion Lab, teacher check, individual demonstration, and submission.
+
+After completing all setup steps above and confirming that the starter application runs, continue with [GUIDED_LAB.md](GUIDED_LAB.md) for the five scheduled guided PT labs and Final PT Completion Lab.
 
 See [PT_CHECKLIST.md](PT_CHECKLIST.md) for the concise checkpoints, tests, and scoring categories.
 

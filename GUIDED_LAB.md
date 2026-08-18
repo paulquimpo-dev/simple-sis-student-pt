@@ -67,7 +67,11 @@ By completing this lab, you should be able to:
 
 ---
 
-# Stage 1 — READ Students
+# Guided PT Lab 1 — READ Students
+
+**Scheduled block:** Monday, September 7, 2026, after the Razor collections and `foreach` lesson
+
+**Checkpoint target:** Seed Students load from PostgreSQL and all required columns display
 
 ## Goal
 
@@ -163,7 +167,11 @@ git commit -m "Complete Student READ checkpoint"
 
 ---
 
-# Stage 2 — CREATE a Student
+# Guided PT Lab 2 — CREATE a Student
+
+**Scheduled block:** Tuesday, September 8, 2026, after forms, GET/POST, model binding, and `asp-for`
+
+**Checkpoint target:** A valid Student saves and remains after application restart
 
 ## Goal
 
@@ -250,7 +258,11 @@ Temporarily reason through—not necessarily modify—what would happen if `Save
 
 ---
 
-# Stage 3 — UPDATE a Student
+# Guided PT Lab 3 — UPDATE a Student
+
+**Scheduled block:** Wednesday, September 9, 2026, after UPDATE and persistence concepts
+
+**Checkpoint target:** Existing values load, valid changes save, and changes remain after restart
 
 ## Goal
 
@@ -341,7 +353,11 @@ Why does UPDATE need to find the stored Student again during POST instead of ass
 
 ---
 
-# Stage 4 — DELETE with confirmation
+# Guided PT Lab 4 — DELETE with confirmation
+
+**Scheduled block:** Wednesday, September 9, 2026, after DELETE confirmation is taught
+
+**Checkpoint target:** GET displays confirmation only; confirmed POST deletion persists
 
 ## Goal
 
@@ -413,7 +429,11 @@ Explain why deletion belongs in `OnPost` rather than `OnGet`. Include one exampl
 
 ---
 
-# Stage 5 — Complete the form and validation feedback
+# Guided PT Lab 5 — Complete validation and feedback
+
+**Scheduled block:** Wednesday, September 9, 2026, after validation and `ModelState` are taught
+
+**Checkpoint target:** Invalid input is rejected with useful feedback and is not saved
 
 ## Goal
 
@@ -491,11 +511,17 @@ Inspect `Models/Student.cs`. Explain the different responsibilities of:
 
 ---
 
-# Stage 6 — Full integration and persistence testing
+# Final PT Completion Lab — Integration and persistence testing
+
+**Scheduled block:** Thursday, September 10, 2026
+
+**Purpose:** Combine the five passed lab checkpoints into the complete PT, run the formal test matrix, repair integration failures, and prepare the application for teacher checking
 
 ## Goal
 
 Prove that the completed features work together and that PostgreSQL—not temporary memory—stores the records.
+
+This is not a new-feature laboratory. Finish incomplete earlier TODOs first, then use this block for integration, testing, cleanup, and explanation readiness.
 
 ## Clean test sequence
 
@@ -556,6 +582,26 @@ Browser form
 ```
 
 Your explanation should identify what data moves between layers and which layer is responsible for storing it permanently.
+
+## Final PT completion checkpoint
+
+- [ ] Every `TODO-PT-*` marker assigned as student work is resolved.
+- [ ] `dotnet build` succeeds.
+- [ ] The complete observable matrix passes.
+- [ ] CREATE, UPDATE, and DELETE persistence are each verified after restart.
+- [ ] No real credentials appear in tracked files.
+- [ ] The source remains within the assigned scaffold and scope.
+- [ ] The student can explain one selected handler and the complete persistence flow.
+- [ ] The teacher records the September 10 first formal PT check.
+
+Passing the individual guided labs builds the PT, but the PT is not considered ready until this final integration checkpoint passes.
+
+## After the completion lab
+
+- **Friday, September 11:** online quiz and PT concept review; no required coding.
+- **Monday, September 14:** remediation, repair list, and clean retest.
+- **Tuesday–Wednesday, September 15–16:** individual demonstrations and final repair.
+- **Thursday, September 17:** final source submission before the announced deadline.
 
 ---
 
