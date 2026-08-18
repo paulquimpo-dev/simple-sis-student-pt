@@ -42,30 +42,109 @@ Do not modify `Models/Student.cs`, `Data/AppDbContext.cs`, `Program.cs`, `.confi
 | `Section` | Required |
 | `Strand` | Required |
 
-## Setup
+## Project and database setup
 
-Prerequisites: Git, .NET 9 SDK, and the assigned PostgreSQL database.
+### 1. Install or confirm the prerequisites
+
+- Git
+- .NET 9 SDK
+- PostgreSQL, including either pgAdmin or the `psql` command-line tool
+- VS Code with the C# Dev Kit extension is recommended but not required
+
+Check the available command-line tools:
+
+```powershell
+git --version
+dotnet --version
+psql --version
+```
+
+The school baseline is the .NET 9 SDK. A newer SDK may also build the project when the .NET 9 targeting pack is available. If `psql` is not on `PATH`, PostgreSQL may still be managed through pgAdmin.
+
+### 2. Obtain the project and restore it
 
 ```powershell
 git clone https://github.com/paulquimpo-dev/simple-sis-student-pt.git
 cd simple-sis-student-pt
 dotnet restore
 dotnet tool restore
+dotnet build
+```
+
+If Git is unavailable, use the teacher-approved ZIP copy, extract it, open the extracted project folder in VS Code, and begin with `dotnet restore`.
+
+Run every command from the folder containing `SimpleSIS.csproj`. Do not create another ASP.NET Core project inside this repository. The scaffold, packages, EF Core tool, context, and migration are already provided.
+
+### 3. Start PostgreSQL and prepare the assigned database
+
+Make sure the PostgreSQL service is running. Use the database already assigned by the teacher. If the teacher directs you to create your own local database, create an empty database named `student_sis`.
+
+Using pgAdmin:
+
+1. Connect to the local PostgreSQL server.
+2. Right-click **Databases** and choose **Create → Database**.
+3. Enter the teacher-assigned name, or `student_sis` when instructed, and save.
+
+Using `psql` when instructed:
+
+```powershell
+psql -U postgres
+```
+
+Then run the approved database name, for example:
+
+```sql
+CREATE DATABASE student_sis;
+```
+
+Exit with `\q`.
+
+Do not manually create a `Students` table, write the schema in SQL, or create a new EF Core migration. The provided migration performs the required schema and seed setup.
+
+### 4. Configure the private connection string
+
+Create the local settings file:
+
+```powershell
 Copy-Item appsettings.Development.example.json appsettings.Development.json
 ```
 
-Open `appsettings.Development.json`, replace the placeholders with the local values given by your teacher, and never commit that file.
+Open `appsettings.Development.json`. Replace the example database, username, and password with the local values assigned by the teacher:
 
-Apply the provided migration and run the web application:
+```text
+Host=localhost;Port=5432;Database=student_sis;Username=postgres;Password=YOUR_LOCAL_PASSWORD
+```
+
+- Never place the password in `Program.cs`, a Razor Page, a commit, or a submitted screenshot.
+- Never commit `appsettings.Development.json`; it is intentionally ignored by Git.
+- Run `git status` before committing and ask the teacher if a credential-bearing file appears.
+
+### 5. Apply the provided migration
 
 ```powershell
+dotnet ef migrations list
 dotnet ef database update
+```
+
+The update should create the required table and two fictional seed rows. If the migration is already applied, EF Core normally reports no pending change and leaves the existing data intact.
+
+### 6. Run and verify the web application
+
+```powershell
 dotnet run
 ```
 
-Open the localhost URL printed in the terminal. Stop the server with Ctrl+C.
+Open the localhost URL printed in the terminal—not a guessed URL. Confirm that the Home and Students pages open. The Student list remains incomplete until Guided PT Lab 1 is finished, so an empty list at this stage is expected. Stop the server with Ctrl+C.
 
-If Git is unavailable, use the teacher-approved ZIP copy, extract it, open its folder in VS Code, and continue at `dotnet restore`.
+### Setup checkpoint
+
+- [ ] The correct repository/project folder is open.
+- [ ] `dotnet restore`, `dotnet tool restore`, and `dotnet build` succeed.
+- [ ] PostgreSQL is running and the assigned database exists.
+- [ ] The ignored development connection string uses the assigned local values.
+- [ ] `dotnet ef database update` succeeds.
+- [ ] `dotnet run` starts the web application.
+- [ ] Home and Students open without an unhandled server error.
 
 ## Seed records
 
