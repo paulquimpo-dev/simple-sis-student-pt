@@ -4,8 +4,8 @@
 
 ### Prerequisite individual laboratories
 
-- [ ] August 20 — Individual Lab 1: a console project restores, builds, and runs.
-- [ ] August 26 — Individual Lab 2: a Razor Pages web app runs through localhost.
+- [ ] Individual Lab 1: a console project restores, builds, and runs after its prerequisite lessons.
+- [ ] Individual Lab 2: a Razor Pages web app runs through localhost after its prerequisite demonstration.
 - [ ] Practice work remains outside the SimpleSIS repository and does not complete PT TODOs early.
 
 ### Guided PT Lab 0 — Setup (September 1)
@@ -18,7 +18,7 @@
 
 ### Final prerequisite individual laboratory
 
-- [ ] September 2 — Individual Lab 3: `OnGet` data appears through a PageModel and Razor Page.
+- [ ] Individual Lab 3: `OnGet` data appears through a PageModel and Razor Page after the Module 4 prerequisites.
 - [ ] The practice page remains separate from the SimpleSIS Student TODO files.
 
 ### Guided PT Lab 1 — READ Students (September 7)

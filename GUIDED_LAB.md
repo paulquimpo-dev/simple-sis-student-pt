@@ -30,6 +30,8 @@ Each stage contains:
 
 > Do not skip directly to later stages. UPDATE and DELETE are easier to test after READ and CREATE work correctly.
 
+The dates in this guide are primary pacing targets. If an in-person class is suspended, a school PC is unavailable, or the prerequisite lesson is unfinished, the teacher moves the checkpoint to the next available in-person PC block. Students do not skip prerequisite stages or perform required home-PC coding merely to preserve a printed date.
+
 ## Before starting this guided lab
 
 Complete the prerequisite labs, cloning, PostgreSQL configuration, provided migration, and first-run instructions linked from [README.md](README.md).
@@ -71,7 +73,7 @@ By completing this lab, you should be able to:
 
 # Guided PT Lab 1 — READ Students
 
-**Scheduled block:** Monday, September 7, 2026, after the Razor collections and `foreach` lesson
+**Primary target:** Monday, September 7, 2026, after the Razor collections and `foreach` lesson
 
 **Checkpoint target:** Seed Students load from PostgreSQL and all required columns display
 
@@ -171,7 +173,7 @@ git commit -m "Complete Student READ checkpoint"
 
 # Guided PT Lab 2 — CREATE a Student
 
-**Scheduled block:** Tuesday, September 8, 2026, after forms, GET/POST, model binding, and `asp-for`
+**Primary target:** Tuesday, September 8, 2026, after forms, GET/POST, model binding, and `asp-for`
 
 **Checkpoint target:** A valid Student saves and remains after application restart
 
@@ -275,7 +277,7 @@ Temporarily reason through—not necessarily modify—what would happen if `Save
 
 # Guided PT Lab 3 — UPDATE a Student
 
-**Scheduled block:** Wednesday, September 9, 2026, after UPDATE and persistence concepts
+**Primary target:** Wednesday, September 9, 2026, after UPDATE and persistence concepts
 
 **Checkpoint target:** Existing values load, valid changes save, and changes remain after restart
 
@@ -370,7 +372,7 @@ Why does UPDATE need to find the stored Student again during POST instead of ass
 
 # Guided PT Lab 4 — DELETE with Confirmation
 
-**Scheduled block:** Wednesday, September 9, 2026, after DELETE confirmation is taught
+**Primary target:** Wednesday, September 9, 2026, after DELETE confirmation is taught
 
 **Checkpoint target:** GET displays confirmation only; confirmed POST deletion persists
 
@@ -446,7 +448,7 @@ Explain why deletion belongs in `OnPost` rather than `OnGet`. Include one exampl
 
 # Guided PT Lab 5 — Validation and Feedback
 
-**Scheduled block:** Wednesday, September 9, 2026, after validation and `ModelState` are taught
+**Primary target:** Wednesday, September 9, 2026, after validation and `ModelState` are taught
 
 **Checkpoint target:** Invalid input is rejected with useful feedback and is not saved
 
@@ -514,7 +516,7 @@ Inspect `Models/Student.cs`. Explain the different responsibilities of:
 
 # Final PT Completion Lab — Integration and persistence testing
 
-**Scheduled block:** Thursday, September 10, 2026
+**Primary target:** Thursday, September 10, 2026
 
 **Purpose:** Combine the five passed lab checkpoints into the complete PT, run the formal test matrix, repair integration failures, and prepare the application for teacher checking
 

@@ -4,20 +4,24 @@ These short individual laboratories prepare you for the SimpleSIS Performance Ta
 
 Complete each laboratory only after its related lesson and keep the practice project separate from the `simple-sis-student-pt` folder.
 
-## Laboratory schedule
+## Target and recovery schedule
 
-| Date | Laboratory | Preparation for SimpleSIS |
-| --- | --- | --- |
-| August 20 | Individual Lab 1 — .NET CLI and Project Structure | Create, restore, build, run, and identify project files |
-| August 26 | Individual Lab 2 — First Razor Pages Web App | Run a web app and trace localhost request/response behavior |
-| September 1 | Guided PT Lab 0 — SimpleSIS Setup | Obtain the scaffold, configure PostgreSQL, apply the migration, and run it |
-| September 2 | Individual Lab 3 — Razor Page and PageModel Flow | Pass a value from `OnGet` to Razor-generated HTML |
+| Primary target | Recovery window | Laboratory | Readiness gate |
+| --- | --- | --- | --- |
+| August 20 | Next available in-person PC block, preferably August 24 | Individual Lab 1 — .NET CLI and Project Structure | Lessons 1.1–1.4 and CLI demonstration complete |
+| August 26 | August 27 or next available in-person PC block | Individual Lab 2 — First Razor Pages Web App | ASP.NET Core, localhost, and request/response demonstration complete |
+| September 1 | September 2–3 or next available in-person PC block | Guided PT Lab 0 — SimpleSIS Setup | School PCs, repository access, and PostgreSQL available |
+| September 2 | September 3 or before Guided PT Lab 1 | Individual Lab 3 — Razor Page and PageModel Flow | PageModel, `OnGet`, properties, and `@Model` taught |
+
+These are pacing targets, not automatic deadlines. If a class is suspended or a readiness gate is not met, use the recovery window. Do not complete a PC-dependent laboratory at home unless the teacher explicitly provides an equitable alternative.
 
 ---
 
 # Individual Lab 1 — .NET CLI and Project Structure
 
-**Scheduled block:** Thursday, August 20, 2026  
+**Primary target:** Thursday, August 20, 2026
+
+**Recovery window:** Next available in-person PC block, preferably Monday, August 24
 **Work mode:** Individual, teacher-guided start  
 **Product:** A separate console practice project
 
@@ -53,7 +57,9 @@ Show the running console output, project tree, and brief written command/file ex
 
 # Individual Lab 2 — First Razor Pages Web App
 
-**Scheduled block:** Wednesday, August 26, 2026  
+**Primary target:** Wednesday, August 26, 2026
+
+**Recovery window:** Thursday, August 27, or the next available in-person PC block
 **Work mode:** Individual after teacher demonstration  
 **Product:** A separate Razor Pages practice project
 
@@ -90,7 +96,9 @@ Show the running page, terminal URL, changed page text, and project folders. Do 
 
 # Guided PT Lab 0 — SimpleSIS Setup
 
-**Scheduled block:** Tuesday, September 1, 2026  
+**Primary target:** Tuesday, September 1, 2026
+
+**Recovery window:** September 2–3, or the next available in-person PC block
 **Work mode:** Teacher-guided environment setup  
 **Product:** A working local copy of the provided student scaffold
 
@@ -102,7 +110,9 @@ This is an environment-readiness checkpoint. Credential or workstation problems 
 
 # Individual Lab 3 — Razor Page and PageModel Flow
 
-**Scheduled block:** Wednesday, September 2, 2026  
+**Primary target:** Wednesday, September 2, 2026
+
+**Recovery window:** September 3, or before Guided PT Lab 1 begins
 **Work mode:** Individual after the Module 4 lesson  
 **Product:** A separate non-PT Razor practice page
 
@@ -139,6 +149,6 @@ Show the working practice page, both paired files, and the written request/PageM
 
 ## Transition to the Performance Task
 
-After the prerequisite checkpoints are complete, return to [GUIDED_LAB.md](GUIDED_LAB.md). The formal cumulative implementation begins with Guided PT Lab 1 — READ Students on September 7.
+After the prerequisite checkpoints are complete, return to [GUIDED_LAB.md](GUIDED_LAB.md). The formal cumulative implementation targets Guided PT Lab 1 — READ Students on September 7. If suspensions delay a prerequisite, the teacher moves the affected PT checkpoint instead of skipping the prerequisite.
 
 The prerequisite laboratories demonstrate readiness. They are not three additional SIS applications and must not receive duplicate credit for later PT behavior.

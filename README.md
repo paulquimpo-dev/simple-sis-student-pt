@@ -80,14 +80,16 @@ The records are fictional and created by the provided migration.
 
 Before the CRUD Performance Task laboratories, complete the separate practice work in [PREREQUISITE_LABS.md](PREREQUISITE_LABS.md):
 
-| Date | Preparation laboratory | Required result |
-| --- | --- | --- |
-| August 20 | Individual Lab 1 — .NET CLI and Project Structure | A console project restores, builds, and runs |
-| August 26 | Individual Lab 2 — First Razor Pages Web App | A local Razor Pages web app runs in the browser |
-| September 1 | Guided PT Lab 0 — SimpleSIS Setup | Scaffold, PostgreSQL, migration, and first run succeed |
-| September 2 | Individual Lab 3 — Razor Page and PageModel Flow | `OnGet` data appears through Razor output |
+| Primary target | Recovery window | Preparation laboratory | Required result |
+| --- | --- | --- | --- |
+| August 20 | Preferably August 24 | Individual Lab 1 — .NET CLI and Project Structure | A console project restores, builds, and runs |
+| August 26 | August 27 or next PC block | Individual Lab 2 — First Razor Pages Web App | A local Razor Pages web app runs in the browser |
+| September 1 | September 2–3 or next PC block | Guided PT Lab 0 — SimpleSIS Setup | Scaffold, PostgreSQL, migration, and first run succeed |
+| September 2 | September 3 or before PT Lab 1 | Individual Lab 3 — Razor Page and PageModel Flow | `OnGet` data appears through Razor output |
 
 The individual labs use separate practice projects. Do not complete `TODO-PT-*` work during them.
+
+All dates are pacing targets. Suspended or online-only PC blocks move to the listed recovery window; students are not required to compensate with home-PC coding.
 
 ## Required PT work order
 
