@@ -83,7 +83,7 @@ The guided laboratories cumulatively build your final Performance Task. Complete
 | Date | Guided PT laboratory | TODO group | Required result |
 | --- | --- | --- | --- |
 | September 7 | Guided PT Lab 1 — READ | `TODO-PT-READ-*` | Seed Students load and display |
-| September 8 | Guided PT Lab 2 — CREATE | `TODO-PT-CREATE-*` | Valid Student persists after restart |
+| September 8 | Guided PT Lab 2 — CREATE | `TODO-PT-CREATE-*` | Complete form saves a valid Student that persists after restart |
 | September 9 | Guided PT Lab 3 — UPDATE | `TODO-PT-UPDATE-*` | Changes persist after restart |
 | September 9 | Guided PT Lab 4 — DELETE | `TODO-PT-DELETE-*` | Confirmed deletion persists |
 | September 9 | Guided PT Lab 5 — Validation | `TODO-PT-VALIDATE-*` | Invalid input is rejected and not saved |

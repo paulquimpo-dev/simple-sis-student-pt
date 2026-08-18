@@ -181,7 +181,7 @@ Accept a valid bound Student, reject invalid input, save the valid record throug
 
 - `TODO-PT-CREATE-01`
 - `TODO-PT-CREATE-02`
-- The form TODOs in Stage 5 must eventually be complete for full manual form testing.
+- `TODO-PT-CREATE-03`
 
 ## File
 
@@ -230,6 +230,19 @@ For a valid Student:
 ### Hint
 
 Adding to the context and saving the database change are two separate operations. If you perform only the first operation, the record will not persist after restart.
+
+## Task 2C: Complete the Create/Edit form controls
+
+Open `Pages/Students/_StudentForm.cshtml` and locate `TODO-PT-CREATE-03`.
+
+StudentNumber is provided as an example. Following the same Bootstrap and Razor Tag Helper pattern, add model-aware label and input groups for:
+
+- FullName
+- GradeLevel
+- Section
+- Strand
+
+The partial is shared by Create and Edit. Completing these controls now makes the valid CREATE checkpoint possible and prepares the form for later UPDATE and validation work.
 
 ## Checkpoint 2
 
@@ -437,11 +450,10 @@ Explain why deletion belongs in `OnPost` rather than `OnGet`. Include one exampl
 
 ## Goal
 
-Provide all required form controls, show useful field-level messages, and prove that invalid input is not saved.
+Verify the shared form controls, show useful field-level messages, and prove that invalid input is not saved.
 
-## TODOs
+## TODO
 
-- `TODO-PT-VALIDATE-01`
 - `TODO-PT-VALIDATE-02`
 
 ## File
@@ -452,22 +464,7 @@ Pages/Students/_StudentForm.cshtml
 
 This partial is shared by Create and Edit. A correction here affects both pages.
 
-## Task 5A: Complete the form controls
-
-StudentNumber is provided as an example. Follow its structure to create Bootstrap-styled groups for:
-
-- FullName
-- GradeLevel
-- Section
-- Strand
-
-Each group requires a model-aware label and input bound to the correct Student property.
-
-### Hint
-
-Use the Razor Tag Helper attributes shown in the StudentNumber example. Change only the property name for each field.
-
-## Task 5B: Display validation feedback
+## Task 5A: Display validation feedback
 
 Add:
 
@@ -475,6 +472,8 @@ Add:
 2. a field-level validation message beside every input, including StudentNumber.
 
 Use the provided `text-danger` styling so errors are visible.
+
+The five controls were completed in Guided PT Lab 2 under `TODO-PT-CREATE-03`. Confirm that each one is still bound to the correct property before testing its message.
 
 ### Important connection
 

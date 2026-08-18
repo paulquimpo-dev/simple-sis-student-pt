@@ -20,6 +20,7 @@
 
 - [ ] `TODO-PT-CREATE-01` prevents an invalid form from saving.
 - [ ] `TODO-PT-CREATE-02` adds and saves a valid Student.
+- [ ] `TODO-PT-CREATE-03` provides all five form controls needed to enter a valid Student.
 - [ ] The application returns to the list after saving.
 - [ ] The created Student remains after restart.
 
@@ -39,7 +40,6 @@
 
 ### Guided PT Lab 5 — Validation (September 9)
 
-- [ ] `TODO-PT-VALIDATE-01` provides the required form controls.
 - [ ] `TODO-PT-VALIDATE-02` displays field-level validation messages.
 - [ ] Empty Student Number is rejected.
 - [ ] Empty Full Name is rejected.
