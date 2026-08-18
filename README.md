@@ -87,7 +87,7 @@ Complete the searchable TODOs in this order:
 5. `TODO-PT-VALIDATE-*`
 6. Full testing
 
-Start with [GUIDED_LAB.md](GUIDED_LAB.md) for the step-by-step laboratory sequence, conceptual hints, checkpoints, challenges, and troubleshooting.
+After completing all setup steps above and confirming that the starter application runs, continue with [GUIDED_LAB.md](GUIDED_LAB.md) to complete READ, CREATE, UPDATE, DELETE, validation, and final testing.
 
 See [PT_CHECKLIST.md](PT_CHECKLIST.md) for the concise checkpoints, tests, and scoring categories.
 

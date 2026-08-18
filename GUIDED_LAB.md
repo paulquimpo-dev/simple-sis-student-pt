@@ -10,10 +10,10 @@
 
 You have received a working web application scaffold with its database infrastructure already prepared. Your task is to complete selected Student CRUD and validation sections without rebuilding the entire project from scratch.
 
-You will work through the application in this order:
+This guide begins after repository setup is complete. You will work through the implementation in this order:
 
 ```text
-Setup → READ → CREATE → UPDATE → DELETE → Validation → Final Testing
+READ → CREATE → UPDATE → DELETE → Validation → Final Testing
 ```
 
 Each stage contains:
@@ -27,6 +27,20 @@ Each stage contains:
 - a challenge that requires your own reasoning.
 
 > Do not skip directly to later stages. UPDATE and DELETE are easier to test after READ and CREATE work correctly.
+
+## Before starting this guided lab
+
+Complete the cloning, PostgreSQL configuration, provided migration, and first-run instructions in [README.md](README.md).
+
+Begin Stage 1 only when:
+
+- `dotnet restore` succeeds;
+- `dotnet tool restore` succeeds;
+- `dotnet ef database update` succeeds;
+- `dotnet run` starts the web application; and
+- the Home and Students pages open in your browser.
+
+If one of these setup checks fails, return to the README troubleshooting section or ask your teacher for setup assistance. Repository setup is a guided prerequisite; this lab focuses on the Student CRUD and validation work you must complete.
 
 ## What you will learn
 
@@ -50,88 +64,6 @@ By completing this lab, you should be able to:
 4. Test after every checkpoint.
 5. Be ready to explain every line you add.
 6. A working feature without an explanation may not receive full credit.
-
----
-
-# Stage 0 — Prepare and run the scaffold
-
-## Goal
-
-Restore the provided dependencies, configure your assigned local database, apply the provided migration, and start the web application.
-
-## Step 1: Open the correct folder
-
-Your terminal should be inside the folder containing `SimpleSIS.csproj`.
-
-Check with:
-
-```powershell
-Get-Location
-Get-ChildItem
-```
-
-You should see files such as:
-
-```text
-SimpleSIS.csproj
-Program.cs
-Pages/
-Models/
-Data/
-Migrations/
-```
-
-## Step 2: Restore dependencies and tools
-
-```powershell
-dotnet restore
-dotnet tool restore
-```
-
-Expected result:
-
-- package restore completes successfully;
-- `dotnet-ef` is restored from the repository-local tool manifest.
-
-## Step 3: Configure PostgreSQL safely
-
-Create your private development settings from the provided example:
-
-```powershell
-Copy-Item appsettings.Development.example.json appsettings.Development.json
-```
-
-Open `appsettings.Development.json` and enter only the local values assigned by your teacher.
-
-> Important: `appsettings.Development.json` is ignored by Git. Never remove that protection and never paste your password into a `.cs` file.
-
-## Step 4: Apply the provided migration
-
-```powershell
-dotnet ef database update
-```
-
-The migration should create the table and two fictional seed records. You are applying a teacher-provided migration, not creating your own migration.
-
-## Step 5: Run the web application
-
-```powershell
-dotnet run
-```
-
-Open the localhost URL displayed in the terminal. Use Ctrl+C when you need to stop the server.
-
-## Checkpoint 0
-
-- [ ] The project restores.
-- [ ] The provided local tool restores.
-- [ ] The migration applies without an authentication error.
-- [ ] The Home page opens in a browser.
-- [ ] The Students page opens, even though its required behavior is incomplete.
-
-### Challenge 0
-
-In your own words, explain why the browser cannot directly read PostgreSQL records. Identify the layers between the browser and PostgreSQL in this project.
 
 ---
 
