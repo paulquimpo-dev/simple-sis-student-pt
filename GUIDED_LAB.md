@@ -10,7 +10,9 @@
 
 You have received a working web application scaffold with its database infrastructure already prepared. Your task is to complete selected Student CRUD and validation sections without rebuilding the entire project from scratch.
 
-This guide begins after repository setup is complete. You will work through the implementation in this order:
+This guide begins after the prerequisite individual laboratories and repository setup are complete. See [PREREQUISITE_LABS.md](PREREQUISITE_LABS.md) for the August 20, August 26, September 1, and September 2 readiness sequence.
+
+You will work through the PT implementation in this order:
 
 ```text
 READ → CREATE → UPDATE → DELETE → Validation → Final Testing
@@ -30,7 +32,7 @@ Each stage contains:
 
 ## Before starting this guided lab
 
-Complete the cloning, PostgreSQL configuration, provided migration, and first-run instructions in [README.md](README.md).
+Complete the prerequisite labs, cloning, PostgreSQL configuration, provided migration, and first-run instructions linked from [README.md](README.md).
 
 Begin Stage 1 only when:
 
@@ -366,7 +368,7 @@ Why does UPDATE need to find the stored Student again during POST instead of ass
 
 ---
 
-# Guided PT Lab 4 — DELETE with confirmation
+# Guided PT Lab 4 — DELETE with Confirmation
 
 **Scheduled block:** Wednesday, September 9, 2026, after DELETE confirmation is taught
 
@@ -442,7 +444,7 @@ Explain why deletion belongs in `OnPost` rather than `OnGet`. Include one exampl
 
 ---
 
-# Guided PT Lab 5 — Complete validation and feedback
+# Guided PT Lab 5 — Validation and Feedback
 
 **Scheduled block:** Wednesday, September 9, 2026, after validation and `ModelState` are taught
 

@@ -76,22 +76,35 @@ After database setup, READ should eventually display:
 
 The records are fictional and created by the provided migration.
 
-## Required work order
+## Laboratory pathway
+
+Before the CRUD Performance Task laboratories, complete the separate practice work in [PREREQUISITE_LABS.md](PREREQUISITE_LABS.md):
+
+| Date | Preparation laboratory | Required result |
+| --- | --- | --- |
+| August 20 | Individual Lab 1 — .NET CLI and Project Structure | A console project restores, builds, and runs |
+| August 26 | Individual Lab 2 — First Razor Pages Web App | A local Razor Pages web app runs in the browser |
+| September 1 | Guided PT Lab 0 — SimpleSIS Setup | Scaffold, PostgreSQL, migration, and first run succeed |
+| September 2 | Individual Lab 3 — Razor Page and PageModel Flow | `OnGet` data appears through Razor output |
+
+The individual labs use separate practice projects. Do not complete `TODO-PT-*` work during them.
+
+## Required PT work order
 
 The guided laboratories cumulatively build your final Performance Task. Complete them only after the related lesson has been taught and in this scheduled order:
 
 | Date | Guided PT laboratory | TODO group | Required result |
 | --- | --- | --- | --- |
-| September 7 | Guided PT Lab 1 — READ | `TODO-PT-READ-*` | Seed Students load and display |
-| September 8 | Guided PT Lab 2 — CREATE | `TODO-PT-CREATE-*` | Complete form saves a valid Student that persists after restart |
-| September 9 | Guided PT Lab 3 — UPDATE | `TODO-PT-UPDATE-*` | Changes persist after restart |
-| September 9 | Guided PT Lab 4 — DELETE | `TODO-PT-DELETE-*` | Confirmed deletion persists |
-| September 9 | Guided PT Lab 5 — Validation | `TODO-PT-VALIDATE-*` | Invalid input is rejected and not saved |
+| September 7 | Guided PT Lab 1 — READ Students | `TODO-PT-READ-*` | Seed Students load and display |
+| September 8 | Guided PT Lab 2 — CREATE a Student | `TODO-PT-CREATE-*` | Complete form saves a valid Student that persists after restart |
+| September 9 | Guided PT Lab 3 — UPDATE a Student | `TODO-PT-UPDATE-*` | Changes persist after restart |
+| September 9 | Guided PT Lab 4 — DELETE with Confirmation | `TODO-PT-DELETE-*` | Confirmed deletion persists |
+| September 9 | Guided PT Lab 5 — Validation and Feedback | `TODO-PT-VALIDATE-*` | Invalid input is rejected and not saved |
 | September 10 | Final PT Completion Lab | All groups | Complete matrix and integration pass |
 
 Completing the individual labs progressively creates your PT. The final PT still requires the Final PT Completion Lab, teacher check, individual demonstration, and submission.
 
-After completing all setup steps above and confirming that the starter application runs, continue with [GUIDED_LAB.md](GUIDED_LAB.md) for the five scheduled guided PT labs and Final PT Completion Lab.
+After completing the prerequisite laboratories and confirming that the starter application runs, continue with [GUIDED_LAB.md](GUIDED_LAB.md) for the five scheduled guided PT labs and Final PT Completion Lab.
 
 See [PT_CHECKLIST.md](PT_CHECKLIST.md) for the concise checkpoints, tests, and scoring categories.
 

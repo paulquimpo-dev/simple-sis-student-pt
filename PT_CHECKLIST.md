@@ -2,7 +2,13 @@
 
 ## Checkpoints
 
-### Setup
+### Prerequisite individual laboratories
+
+- [ ] August 20 — Individual Lab 1: a console project restores, builds, and runs.
+- [ ] August 26 — Individual Lab 2: a Razor Pages web app runs through localhost.
+- [ ] Practice work remains outside the SimpleSIS repository and does not complete PT TODOs early.
+
+### Guided PT Lab 0 — Setup (September 1)
 
 - [ ] Packages restore.
 - [ ] Repository-local tools restore.
@@ -10,13 +16,18 @@
 - [ ] The provided migration applies.
 - [ ] The starter web application launches.
 
-### Guided PT Lab 1 — READ (September 7)
+### Final prerequisite individual laboratory
+
+- [ ] September 2 — Individual Lab 3: `OnGet` data appears through a PageModel and Razor Page.
+- [ ] The practice page remains separate from the SimpleSIS Student TODO files.
+
+### Guided PT Lab 1 — READ Students (September 7)
 
 - [ ] `TODO-PT-READ-01` retrieves Students through `AppDbContext`.
 - [ ] `TODO-PT-READ-02` displays Student Number, Full Name, Grade Level, Section, and Strand.
 - [ ] Both seed Students display.
 
-### Guided PT Lab 2 — CREATE (September 8)
+### Guided PT Lab 2 — CREATE a Student (September 8)
 
 - [ ] `TODO-PT-CREATE-01` prevents an invalid form from saving.
 - [ ] `TODO-PT-CREATE-02` adds and saves a valid Student.
@@ -24,21 +35,21 @@
 - [ ] The application returns to the list after saving.
 - [ ] The created Student remains after restart.
 
-### Guided PT Lab 3 — UPDATE (September 9)
+### Guided PT Lab 3 — UPDATE a Student (September 9)
 
 - [ ] `TODO-PT-UPDATE-01` loads the selected Student.
 - [ ] `TODO-PT-UPDATE-02` prevents invalid changes from saving.
 - [ ] `TODO-PT-UPDATE-03` updates the stored fields and saves.
 - [ ] The updated values remain after restart.
 
-### Guided PT Lab 4 — DELETE (September 9)
+### Guided PT Lab 4 — DELETE with Confirmation (September 9)
 
 - [ ] `TODO-PT-DELETE-01` loads the selected Student for confirmation.
 - [ ] Opening confirmation does not delete anything.
 - [ ] `TODO-PT-DELETE-02` removes and saves only after confirmation POST.
 - [ ] The Student remains absent after restart.
 
-### Guided PT Lab 5 — Validation (September 9)
+### Guided PT Lab 5 — Validation and Feedback (September 9)
 
 - [ ] `TODO-PT-VALIDATE-02` displays field-level validation messages.
 - [ ] Empty Student Number is rejected.
