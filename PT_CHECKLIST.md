@@ -27,7 +27,7 @@
 - [ ] `TODO-PT-READ-02` displays Student Number, Full Name, Grade Level, Section, and Strand.
 - [ ] Both seed Students display.
 
-### Guided PT Lab 2 — CREATE a Student (September 8)
+### Guided PT Lab 2 — CREATE a Student (September 8–9 target; September 10 recovery)
 
 - [ ] `TODO-PT-CREATE-01` prevents an invalid form from saving.
 - [ ] `TODO-PT-CREATE-02` adds and saves a valid Student.
@@ -35,21 +35,21 @@
 - [ ] The application returns to the list after saving.
 - [ ] The created Student remains after restart.
 
-### Guided PT Lab 3 — UPDATE a Student (September 9)
+### Guided PT Lab 3 — UPDATE a Student (September 9–10 target; September 14 recovery)
 
 - [ ] `TODO-PT-UPDATE-01` loads the selected Student.
 - [ ] `TODO-PT-UPDATE-02` prevents invalid changes from saving.
 - [ ] `TODO-PT-UPDATE-03` updates the stored fields and saves.
 - [ ] The updated values remain after restart.
 
-### Guided PT Lab 4 — DELETE with Confirmation (September 9)
+### Guided PT Lab 4 — DELETE with Confirmation (September 10 target; September 14 recovery)
 
 - [ ] `TODO-PT-DELETE-01` loads the selected Student for confirmation.
 - [ ] Opening confirmation does not delete anything.
 - [ ] `TODO-PT-DELETE-02` removes and saves only after confirmation POST.
 - [ ] The Student remains absent after restart.
 
-### Guided PT Lab 5 — Validation and Feedback (September 9)
+### Guided PT Lab 5 — Validation and Feedback (September 10 target; September 14 recovery)
 
 - [ ] `TODO-PT-VALIDATE-02` displays field-level validation messages.
 - [ ] Empty Student Number is rejected.
@@ -59,7 +59,7 @@
 - [ ] Empty Strand is rejected.
 - [ ] Invalid input is not saved.
 
-## Final PT Completion Lab (September 10)
+## Final PT Completion Lab (September 10 readiness check; September 14 completion/retest)
 
 The five guided labs build the application incrementally. Complete the following integrated matrix before the PT is considered functionally complete.
 
@@ -81,7 +81,7 @@ The five guided labs build the application incrementally. Complete the following
 - [ ] All assigned `TODO-PT-*` areas are complete.
 - [ ] The project builds successfully.
 - [ ] No real credentials are tracked.
-- [ ] Teacher completes the first formal PT check.
+- [ ] Teacher completes the September 10 readiness check or the September 14 final readiness check, as applicable.
 - [ ] Repair items are recorded for September 14 when needed.
 - [ ] Student is prepared for the September 15–16 individual demonstration.
 - [ ] Final source is ready for the September 17 submission.

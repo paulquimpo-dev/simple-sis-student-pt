@@ -173,7 +173,7 @@ git commit -m "Complete Student READ checkpoint"
 
 # Guided PT Lab 2 — CREATE a Student
 
-**Primary target:** Tuesday, September 8, 2026, after forms, GET/POST, model binding, and `asp-for`
+**Target window:** September 8–9, 2026, after forms, GET/POST, model binding, and `asp-for`; use September 10 as the recovery target when prerequisites or PC time move
 
 **Checkpoint target:** A valid Student saves and remains after application restart
 
@@ -277,7 +277,7 @@ Temporarily reason through—not necessarily modify—what would happen if `Save
 
 # Guided PT Lab 3 — UPDATE a Student
 
-**Primary target:** Wednesday, September 9, 2026, after UPDATE and persistence concepts
+**Target window:** September 9–10, 2026, after UPDATE and persistence concepts; use September 14 as the protected recovery window when needed
 
 **Checkpoint target:** Existing values load, valid changes save, and changes remain after restart
 
@@ -372,7 +372,7 @@ Why does UPDATE need to find the stored Student again during POST instead of ass
 
 # Guided PT Lab 4 — DELETE with Confirmation
 
-**Primary target:** Wednesday, September 9, 2026, after DELETE confirmation is taught
+**Target window:** September 10, 2026, after DELETE confirmation is taught; use September 14 as the protected recovery window when needed
 
 **Checkpoint target:** GET displays confirmation only; confirmed POST deletion persists
 
@@ -448,7 +448,7 @@ Explain why deletion belongs in `OnPost` rather than `OnGet`. Include one exampl
 
 # Guided PT Lab 5 — Validation and Feedback
 
-**Primary target:** Wednesday, September 9, 2026, after validation and `ModelState` are taught
+**Target window:** September 10, 2026, after validation and `ModelState` are taught; use September 14 as the protected recovery window when needed
 
 **Checkpoint target:** Invalid input is rejected with useful feedback and is not saved
 
@@ -516,7 +516,9 @@ Inspect `Models/Student.cs`. Explain the different responsibilities of:
 
 # Final PT Completion Lab — Integration and persistence testing
 
-**Primary target:** Thursday, September 10, 2026
+**Readiness target:** Thursday, September 10, 2026
+
+**Protected completion and clean-retest window:** Monday, September 14, 2026
 
 **Purpose:** Combine the five passed lab checkpoints into the complete PT, run the formal test matrix, repair integration failures, and prepare the application for teacher checking
 
@@ -595,14 +597,14 @@ Your explanation should identify what data moves between layers and which layer 
 - [ ] No real credentials appear in tracked files.
 - [ ] The source remains within the assigned scaffold and scope.
 - [ ] The student can explain one selected handler and the complete persistence flow.
-- [ ] The teacher records the September 10 first formal PT check.
+- [ ] The teacher records the September 10 readiness check and identifies any remaining gated work.
 
 Passing the individual guided labs builds the PT, but the PT is not considered ready until this final integration checkpoint passes.
 
 ## After the completion lab
 
 - **Friday, September 11:** online quiz and PT concept review; no required coding.
-- **Monday, September 14:** remediation, repair list, and clean retest.
+- **Monday, September 14:** protected completion of remaining prerequisite-gated work, remediation, and clean retest.
 - **Tuesday–Wednesday, September 15–16:** individual demonstrations and final repair.
 - **Thursday, September 17:** final source submission before the announced deadline.
 
