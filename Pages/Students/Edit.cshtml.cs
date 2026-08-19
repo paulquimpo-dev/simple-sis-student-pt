@@ -22,8 +22,9 @@ public class EditModel(AppDbContext context) : PageModel
 
     public IActionResult OnPost()
     {
-        // TODO-PT-UPDATE-02
-        // If model validation fails, redisplay the form without saving.
+        // TODO-PT-UPDATE-02 (complete during Guided PT Lab 5)
+        // After ModelState has been taught, redisplay invalid changes
+        // without saving them.
 
         // TODO-PT-UPDATE-03
         // Find the stored Student by Student.Id, handle a missing record,

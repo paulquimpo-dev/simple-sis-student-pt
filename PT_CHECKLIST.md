@@ -29,7 +29,6 @@
 
 ### Guided PT Lab 2 — CREATE a Student (September 8–9 target; September 10 recovery)
 
-- [ ] `TODO-PT-CREATE-01` prevents an invalid form from saving.
 - [ ] `TODO-PT-CREATE-02` adds and saves a valid Student.
 - [ ] `TODO-PT-CREATE-03` provides all five form controls needed to enter a valid Student.
 - [ ] The application returns to the list after saving.
@@ -38,7 +37,6 @@
 ### Guided PT Lab 3 — UPDATE a Student (September 9–10 target; September 14 recovery)
 
 - [ ] `TODO-PT-UPDATE-01` loads the selected Student.
-- [ ] `TODO-PT-UPDATE-02` prevents invalid changes from saving.
 - [ ] `TODO-PT-UPDATE-03` updates the stored fields and saves.
 - [ ] The updated values remain after restart.
 
@@ -52,6 +50,8 @@
 ### Guided PT Lab 5 — Validation and Feedback (September 10 target; September 14 recovery)
 
 - [ ] `TODO-PT-VALIDATE-02` displays field-level validation messages.
+- [ ] `TODO-PT-CREATE-01` prevents an invalid Create form from saving.
+- [ ] `TODO-PT-UPDATE-02` prevents invalid Edit changes from saving.
 - [ ] Empty Student Number is rejected.
 - [ ] Empty Full Name is rejected.
 - [ ] Grade Level below 7 or above 12 is rejected.

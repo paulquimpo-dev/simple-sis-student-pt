@@ -18,9 +18,9 @@ public class CreateModel(AppDbContext context) : PageModel
     {
         _ = context; // The provided context is used when completing the TODO.
 
-        // TODO-PT-CREATE-01
-        // If model validation fails, redisplay this page so the student can
-        // correct the form. Do not save invalid input.
+        // TODO-PT-CREATE-01 (complete during Guided PT Lab 5)
+        // After ModelState has been taught, redisplay invalid input so the
+        // student can correct it. Do not save invalid input.
 
         // TODO-PT-CREATE-02
         // Add the bound Student to the provided DbContext and save the change.

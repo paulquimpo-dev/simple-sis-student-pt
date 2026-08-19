@@ -177,10 +177,10 @@ The guided laboratories cumulatively build your final Performance Task. Complete
 | Date | Guided PT laboratory | TODO group | Required result |
 | --- | --- | --- | --- |
 | September 7 target; September 8 recovery | Guided PT Lab 1 — READ Students | `TODO-PT-READ-*` | Begin only after Module 5 collections/`foreach`; seed Students load and display |
-| September 8–9 target; September 10 recovery | Guided PT Lab 2 — CREATE a Student | `TODO-PT-CREATE-*` | Begin only after Module 6 forms/model binding; valid Student persists after restart |
-| September 9–10 target; September 14 recovery | Guided PT Lab 3 — UPDATE a Student | `TODO-PT-UPDATE-*` | Begin only after Module 7 UPDATE/persistence instruction; changes persist after restart |
+| September 8–9 target; September 10 recovery | Guided PT Lab 2 — CREATE a Student | `TODO-PT-CREATE-02`, `TODO-PT-CREATE-03` | Begin only after Module 6 forms/model binding; valid Student persists after restart |
+| September 9–10 target; September 14 recovery | Guided PT Lab 3 — UPDATE a Student | `TODO-PT-UPDATE-01`, `TODO-PT-UPDATE-03` | Begin only after Module 7 UPDATE/persistence instruction; valid changes persist after restart |
 | September 10 target; September 14 recovery | Guided PT Lab 4 — DELETE with Confirmation | `TODO-PT-DELETE-*` | Begin only after delete-confirmation instruction; confirmed deletion persists |
-| September 10 target; September 14 recovery | Guided PT Lab 5 — Validation and Feedback | `TODO-PT-VALIDATE-*` | Begin only after validation/`ModelState`; invalid input is rejected and not saved |
+| September 10 target; September 14 recovery | Guided PT Lab 5 — Validation and Feedback | `TODO-PT-VALIDATE-*`, `TODO-PT-CREATE-01`, `TODO-PT-UPDATE-02` | Begin only after validation/`ModelState`; invalid input is rejected and not saved |
 | September 10 readiness check; September 14 completion/retest | Final PT Completion Lab | All groups | Complete matrix and integration pass without skipping prerequisites |
 
 Completing the individual labs progressively creates your PT. The final PT still requires the Final PT Completion Lab, teacher check, individual demonstration, and submission.

@@ -179,11 +179,10 @@ git commit -m "Complete Student READ checkpoint"
 
 ## Goal
 
-Accept a valid bound Student, reject invalid input, save the valid record through EF Core, and return to the list.
+Accept a valid bound Student, save it through EF Core, and return to the list. The invalid-input guard is deliberately completed later, after Module 7 validation theory.
 
 ## TODOs
 
-- `TODO-PT-CREATE-01`
 - `TODO-PT-CREATE-02`
 - `TODO-PT-CREATE-03`
 
@@ -197,7 +196,7 @@ Pages/Students/Create.cshtml.cs
 
 The provided `[BindProperty]` connects submitted form values to the PageModel's `Student` property.
 
-The required decision is:
+The complete final decision will be:
 
 ```text
 POST received
@@ -207,21 +206,11 @@ Is the model valid?
     └── Yes → add → save → redirect to list
 ```
 
-## Task 2A: Stop invalid submissions
+## Deferred validation guard
 
-Locate `TODO-PT-CREATE-01`.
+Do not complete `TODO-PT-CREATE-01` during this checkpoint. It requires `ModelState`, which is unlocked during Guided PT Lab 5 after Module 7 validation instruction. For now, use only the teacher-approved valid test record below.
 
-Before adding anything to the database:
-
-1. check whether `ModelState` is valid;
-2. when it is invalid, return the current Razor Page; and
-3. do not continue to the add/save statements.
-
-### Hint
-
-This requires an `if` condition. Think carefully about whether you return when the model **is valid** or when it **is not valid**.
-
-## Task 2B: Save a valid Student
+## Task 2A: Save a valid Student
 
 Locate `TODO-PT-CREATE-02`.
 
@@ -235,7 +224,7 @@ For a valid Student:
 
 Adding to the context and saving the database change are two separate operations. If you perform only the first operation, the record will not persist after restart.
 
-## Task 2C: Complete the Create/Edit form controls
+## Task 2B: Complete the Create/Edit form controls
 
 Open `Pages/Students/_StudentForm.cshtml` and locate `TODO-PT-CREATE-03`.
 
@@ -283,12 +272,11 @@ Temporarily reason through—not necessarily modify—what would happen if `Save
 
 ## Goal
 
-Load an existing Student into the Edit form, reject invalid changes, copy permitted fields to the stored entity, and persist the update.
+Load an existing Student into the Edit form, copy permitted valid changes to the stored entity, and persist the update. The invalid-change guard is completed later, after Module 7 validation theory.
 
 ## TODOs
 
 - `TODO-PT-UPDATE-01`
-- `TODO-PT-UPDATE-02`
 - `TODO-PT-UPDATE-03`
 
 ## File
@@ -328,13 +316,11 @@ Your handler must:
 
 The provided context has a method intended to find an entity by its primary key. The result may be `null`, so handle that case before assigning it.
 
-## Task 3B: Reject invalid changes
+## Deferred validation guard
 
-Locate `TODO-PT-UPDATE-02`.
+Do not complete `TODO-PT-UPDATE-02` during this checkpoint. It requires `ModelState`, which is unlocked during Guided PT Lab 5. Use teacher-approved valid changes while building and testing UPDATE.
 
-Use the same validation decision as CREATE. Invalid submitted values must redisplay the Edit page without reaching database update logic.
-
-## Task 3C: Persist permitted changes
+## Task 3B: Persist permitted changes
 
 Locate `TODO-PT-UPDATE-03`.
 
@@ -456,9 +442,11 @@ Explain why deletion belongs in `OnPost` rather than `OnGet`. Include one exampl
 
 Verify the shared form controls, show useful field-level messages, and prove that invalid input is not saved.
 
-## TODO
+## TODOs
 
 - `TODO-PT-VALIDATE-02`
+- `TODO-PT-CREATE-01`
+- `TODO-PT-UPDATE-02`
 
 ## File
 
@@ -478,6 +466,14 @@ Add:
 Use the provided `text-danger` styling so errors are visible.
 
 The five controls were completed in Guided PT Lab 2 under `TODO-PT-CREATE-03`. Confirm that each one is still bound to the correct property before testing its message.
+
+## Task 5B: Make Create and Edit honor validation
+
+Complete the two handler guards intentionally deferred until this lesson:
+
+1. `TODO-PT-CREATE-01` returns the Create page when `ModelState` is invalid.
+2. `TODO-PT-UPDATE-02` returns the Edit page when `ModelState` is invalid.
+3. Neither handler continues to database-saving logic after an invalid submission.
 
 ### Important connection
 
